@@ -49,9 +49,21 @@
 - contains **top** **100 coins** which current price **dynamic updating** every day.
 
 **Technologies Used : MERN(Mongo DB, Express JS, React JS, Node JS), Hashing, Coin Gecko API**
+<hr>
+
+
+
+
+**Website Url : <a href="https://ronianalytics.netlify.app">www.assessment.com</a>**
+
+
+
+
+<hr>
 
 ### ScreenShots    
 <hr>
+<center>
  <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h1.png"  width="380px" height="250px" align="left"/></img>
  <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h.png"  width="380px" height="250px" align="left"/><hr>
  <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h3.png"  width="380px" height="250px" align="left"/><br>
@@ -59,3 +71,4 @@
  <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/c.png"  width="380px" height="250px" align="left"/><br>
  <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/l.png"  width="380px" height="250px" align="left"/><br>
  <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/s.png"  width="380px" height="250px" align="left"/><br>
+ </center>
