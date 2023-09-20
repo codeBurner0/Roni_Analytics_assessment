@@ -52,10 +52,10 @@
 
 ### ScreenShots    
 <hr>
- <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h1.png"  width="420px" height="250px" align="left"/></img>
- <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h.png"  width="420px" height="250px" align="left"/><hr>
- <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h3.png"  width="420px" height="250px" align="left"/><br>
- <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/a1.png"  width="420px" height="250px" align="left"/><br>
- <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/c.png"  width="420px" height="250px" align="left"/><br>
- <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/l.png"  width="420px" height="250px" align="left"/><br>
- <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/s.png"  width="420px" height="250px" align="left"/><br>
+ <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h1.png"  width="380px" height="250px" align="left"/></img>
+ <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h.png"  width="380px" height="250px" align="left"/><hr>
+ <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/h3.png"  width="380px" height="250px" align="left"/><br>
+ <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/a1.png"  width="380px" height="250px" align="left"/><br>
+ <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/c.png"  width="380px" height="250px" align="left"/><br>
+ <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/l.png"  width="380px" height="250px" align="left"/><br>
+ <img src="https://github.com/codeBurner0/Roni_Analytics_assessment/blob/main/screenshots/s.png"  width="380px" height="250px" align="left"/><br>
