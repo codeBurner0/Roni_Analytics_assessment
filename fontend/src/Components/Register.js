@@ -18,7 +18,7 @@ function Register() {
   }, [])
   async function Handle() {
     console.log(firstName, lastName, email, password, confirmPassword)
-    let result = await fetch('https://roni-backend.onrender.com/v1/register', {
+    let result = await fetch('https://roni-backend-ox15.vercel.app/register', {
       method: 'POST',
       body: JSON.stringify({ firstName, lastName, email, phone, password, confirmPassword }),
       headers: {

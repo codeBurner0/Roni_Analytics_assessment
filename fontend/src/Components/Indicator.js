@@ -258,7 +258,7 @@ function Indicator() {
 
   async function saveHistory(userId,radio,timeperiod,formula,result){
     console.log(userId,radio,timeperiod,formula,result)
-    let res=await fetch('https://roni-backend.onrender.com/v1/history',{
+    let res=await fetch('https://roni-backend-ox15.vercel.app/history',{
       method:'POST',
       body:JSON.stringify({userId,radio,timeperiod,formula,result}),
       headers:{

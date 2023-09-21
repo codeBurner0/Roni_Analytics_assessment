@@ -36,11 +36,11 @@ function Profile() {
         setUserId(auth._id)
         async function callApi() {
             try {
-                let result = await fetch(`https://roni-backend.onrender.com/v1/user/${auth._id}`)
+                let result = await fetch(`https://roni-backend-ox15.vercel.app/user/${auth._id}`)
                 result = await result.json();
                 setUserDetails(result);
                 console.log("details", result)
-                let result2 = await fetch(`https://roni-backend.onrender.com/v1/userHistory/${auth._id}`)
+                let result2 = await fetch(`https://roni-backend-ox15.vercel.app/userHistory/${auth._id}`)
                 result2 = await result2.json();
                 setUserHistory(result2);
                 console.log("history", result2)
@@ -53,7 +53,7 @@ function Profile() {
 
 
     async function updateProfile(id, firstName, lastName, phone) {
-        let result = await fetch(`https://roni-backend.onrender.com/v1/update/${id}`, {
+        let result = await fetch(`https://roni-backend-ox15.vercel.app/update/${id}`, {
             method: 'PUT',
             body: JSON.stringify({ firstName, lastName, password, phone }),
             headers: {
