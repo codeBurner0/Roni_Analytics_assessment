@@ -19,7 +19,7 @@ function LoginPgae() {
 
   async function login(){
     console.log(email,password)
-    let result=await fetch('http://localhost:5000/v1/login',{
+    let result=await fetch('https://roni-backend.onrender.com/v1/login',{
       method:'POST',
       body:JSON.stringify({email,password}),
       headers:{
