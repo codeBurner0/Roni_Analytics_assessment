@@ -61,12 +61,12 @@ router.post('/login',async(req,res)=>{
 })
 
 router.post('/history',async(req,res)=>{
-        if(req.body.userId && req.body.radio && req.body.formula && req.body.timeperiod && req.body.result){
+        if(req.body.userId && req.body.radio && req.body.formula && req.body.timeperiod){
             try{
-                let result=new History(req.body);
-                await result.save();
-                if(result){
-                    res.status(201).send(result);
+                let resul=new History(req.body);
+                await resul.save();
+                if(resul){
+                    res.status(201).send(resul);
                 }else{
                     res.json({message:"all fields are mandatory"})
                 }

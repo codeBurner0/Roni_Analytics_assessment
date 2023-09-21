@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react'
 import "../assets/css/navbar.css"
 import { Link, useNavigate } from 'react-router-dom'
 import appLogo from '../assets/images/appLogo.png'
-function navbar() {
+function Navbar() {
   const [auth,setAuth]=useState("");
   const [user,setUser]=useState("");
-
+  const navigate=useNavigate();
   useEffect(()=>{
     const author=localStorage.getItem('user');
     if(author){
@@ -21,7 +21,7 @@ function navbar() {
     navigate(0)
     navigate('/')
   }
-  const navigate=useNavigate();
+  
   return (
     <div className="nav-container">
       <div className="navbar">
@@ -44,4 +44,4 @@ function navbar() {
   )
 }
 
-export default navbar
+export default Navbar

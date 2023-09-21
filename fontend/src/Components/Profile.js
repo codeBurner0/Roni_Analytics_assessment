@@ -25,7 +25,11 @@ function Profile() {
     const navigate = useNavigate()
     useEffect(() => {
         let auth = localStorage.getItem('user')
+        if(auth){
         auth = JSON.parse(auth)
+        }else{
+            auth={"firstName":"Ankit","lastName":"Anand","email":"ankit@gmail.com","phone":"7078259655"};
+        }
         setFirstName(auth.firstName)
         setLastName(auth.lastName)
         setPhone(auth.phone)
@@ -118,7 +122,7 @@ function Profile() {
                                                     <tbody>
                                                         {
                                                             userHistory.map((item, index) => {
-                                                                return (<tr key={index}>
+                                                                return (<tr key={index} className='pro-tr'>
                                                                     <td>{index + 1}</td>
                                                                     <td>{item.radio} </td>
                                                                     <td>{item.timeperiod}</td>

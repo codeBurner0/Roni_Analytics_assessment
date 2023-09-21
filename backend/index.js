@@ -7,7 +7,7 @@ app.use('/v1',appRoutes);
 const start=()=>{
     app.listen(port,()=>{
         console.log("server is started");
-        console.log("Click here: http://localhost:3000/v1");
+        console.log("Click here: http://localhost:5000/v1");
     })
 }
 start();

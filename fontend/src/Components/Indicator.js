@@ -63,9 +63,11 @@ function Indicator() {
       console.log("sum", sum)
       console.log("result", sum / timeperiod)
       setResult(parseFloat(sum / timeperiod).toFixed(2));
+      result=parseFloat(sum / timeperiod).toFixed(2);
       console.log("category", categoryArray)
       setObjectArray(categoryArray)
       setErr('')
+      saveHistory(userId,radio,timeperiod,formula,result)
     } catch (e) {
       setErr("All fields are required")
     }
@@ -89,9 +91,11 @@ function Indicator() {
       const previousEMA = yesterdayPrice * (1 - multiplier)
       const EMA = currentEMA + previousEMA;
       setResult(parseFloat(EMA).toFixed(2));
+      result=parseFloat(EMA).toFixed(2);
       console.log("EMA", EMA)
       setObjectArray(categoryArray)
       setErr('')
+      saveHistory(userId,radio,timeperiod,formula,result)
     } catch (error) {
       setErr("All fields are required")
     }
@@ -116,8 +120,10 @@ function Indicator() {
       const div = timeperiod * (1 + +timeperiod);
       console.log("div", div)
       setResult(parseFloat(sum / (div * 0.5)).toFixed(2));
+      result=parseFloat(sum / (div * 0.5)).toFixed(2);
       setObjectArray(categoryArray)
       setErr('')
+      saveHistory(userId,radio,timeperiod,formula,result)
     } catch (error) {
       setErr("All fields are required")
     }
@@ -150,6 +156,8 @@ function Indicator() {
       const EMA = currentEMA + previousEMA;
       console.log("EMA", EMA)
       setResult(parseFloat((MA + WMA + EMA) / 3).toFixed(2));
+      result=parseFloat((MA + WMA + EMA) / 3).toFixed(2);
+      saveHistory(userId,radio,timeperiod,formula,result)
       setObjectArray(categoryArray)
       setErr('')
     } catch (error) {
@@ -185,8 +193,10 @@ function Indicator() {
       console.log("EMA", EMA)
       console.log("weighted")
       setResult(parseFloat((1 * MA + 2 * WMA + 3 * EMA) / 6).toFixed(2));
+      result=parseFloat((1 * MA + 2 * WMA + 3 * EMA) / 6).toFixed(2);
       setObjectArray(categoryArray)
       setErr('')
+      saveHistory(userId,radio,timeperiod,formula,result)
     } catch (error) {
       setErr("All fields are required")
     }
@@ -241,8 +251,10 @@ function Indicator() {
     else {
       averageMaWmaEma()
     }
-    saveHistory(userId,radio,timeperiod,formula,result)
+
+    
   }
+
 
   async function saveHistory(userId,radio,timeperiod,formula,result){
     console.log(userId,radio,timeperiod,formula,result)
@@ -267,7 +279,7 @@ function Indicator() {
         options={state.options}
         series={state.series}
         themes={state.theme}
-        type="bar"
+        type="line"
         color="white"
         className="chart"
       />

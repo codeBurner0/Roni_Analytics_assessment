@@ -5,6 +5,9 @@
     padding-bottom: 5vw;
 }
 
+.pro-tr:hover{
+    cursor: pointer;
+  }
 
 .outer-div-profile{
     background-color:#bdb5dd4c;

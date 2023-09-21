@@ -44,7 +44,7 @@ function CoinList() {
             <tbody>
               {
                 coinList.map((item, index) => {
-                  return (<tr key={index}>
+                  return (<tr key={index} className='coin-tr'>
                     <td>{index + 1}</td>
                     <td><img className='symbol-coin' src={item.image} alt="" />{item.symbol}</td>
                     <td>{item.name} </td>

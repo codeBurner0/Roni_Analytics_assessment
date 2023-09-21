@@ -45,9 +45,9 @@ function Register() {
       <div className="container">
         <h3 className='title'>Create Account</h3>
         <input type="text" className="register-login input1" placeholder='Firstname'
-          onChange={(e) => setFirstName(e.target.value)} />
+          onChange={(e) => setFirstName(e.target.value)} required/>
         <input type="text" className="register-login input2" placeholder='Lastname'
-          onChange={(e) => setLastName(e.target.value)} />
+          onChange={(e) => setLastName(e.target.value)} required/>
         <input type="text" className="register-login input3" placeholder='Email Address'
           onChange={(e) => setEmail(e.target.value)} />
         <input type="text" className="register-login input3" placeholder='Phone Number'
